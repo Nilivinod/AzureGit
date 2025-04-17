@@ -1,0 +1,31 @@
+<!-- <template>
+<lightning-datatable
+                key-field="Id"
+                data={dalist}
+                columns={coloumslist}>
+        </lightning-datatable>
+        <lightning-button  label= "Show Data" onclick={handleclick} ></lightning-button>
+</template> -->
+<template>
+    <!-- Conditionally render the datatable -->
+    <template if:true={isDataVisible}>
+        <lightning-datatable
+            key-field="Id"
+            data={dalist}
+            columns={coloumslist}
+            class="slds-m-bottom_medium">
+        </lightning-datatable>
+        <lightning-button 
+            label="Close Data" 
+            onclick={handleCloseData}
+            class="slds-m-top_medium">
+        </lightning-button>
+    </template>
+    <template if:false={isDataVisible}>
+        <lightning-button 
+            label="Show Data" 
+            onclick={handleShowData}
+            class="slds-m-top_medium">
+        </lightning-button>
+    </template>
+</template>

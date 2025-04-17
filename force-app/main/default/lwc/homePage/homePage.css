@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel-container {
+    flex-basis: 100%;
+    max-width: 100%;
+				
+}
+
+.carousel-container .slds-carousel__indicators {
+  display: none !important;
+}
+
+
+.city-container-wrapper {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+
+.city-container-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: PaleTurquoise;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.city-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.city-tile {
+    width: 220px;
+    height: 90%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 55px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.city-tile:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		transform: scale(1.1);
+}
+
+.city-logo {
+    width: 100px;
+    height: 78px;
+    object-fit: contain;
+    margin-bottom: 1px;
+}
+
+.message {
+    text-align: center;
+    margin-top: 2px;
+		font-family: "Georgia", serif;
+		font-size: 24px;
+		color: DarkSlateGrey;
+		font-weight: bold;
+}
